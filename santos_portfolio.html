@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin Santos</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+  <style>
+    :root{
+      ---con-background-color : #9c9c9c;
+      --transition: all .4s ease-in-out; 
+      --color-icon: #2a2e35; 
+      --color-white: #ffffff; 
+      --color-secondary: #095469; 
+      --color-primary: #191d2b;  
+    }
+
+    .animation{
+        background: linear-gradient(to bottom, #252325, #b4827f6f);
+        width: 100%;
+        height: 100vh
+}
+.Box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.Box li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height:25px;
+    background: rgba(175, 12, 12, 0.716);
+    animation: animate 20s linear infinite;
+    bottom: -200px;
+}
+
+.Box li:nth-child(1){
+    left:86%;
+    width:80px;
+    height:80px;
+    animation-delay:0s;
+    border-radius: 50%;
+
+}
+.Box li:nth-child(2){
+    left:12%;
+    width:30px;
+    height:30px;
+    animation-delay:1.5s;
+    animation-duration: 10s;
+    border-radius: 50%;
+}
+.Box li:nth-child(3){
+    left:70%;
+    width:100px;
+    height:100px;
+    animation-delay:5.5s;
+    animation-duration: 10s;
+    border-radius: 50%;
+}
+.Box li:nth-child(4){
+    left:42%;
+    width:150px;
+    height:150px;
+    animation-delay:0s;
+    animation-duration: 15s;
+    border-radius: 50%;
+}
+
+.Box li:nth-child(5){
+    left:65%;
+    width:200px;
+    height:200px;
+    animation-delay:0s;
+    animation-duration: 10s;
+    border-radius: 50%;
+}
+.Box li:nth-child(6){
+    left:95%;
+    width:110px;
+    height:110px;
+    animation-delay:3.5s;
+    border-radius: 50%;
+}
+.Box li:nth-child(7){
+    left:35%;
+    width:110px;
+    height:110px;
+    animation-delay:3.5s;
+    border-radius: 50%;
+}
+.Box li:nth-child(8){
+    left:55%;
+    width:10px;
+    height:10px;
+    animation-delay:3.5s;
+    border-radius: 50%;
+}
+.Box li:nth-child(9){
+    left:45%;
+    width:310px;
+    height:310px;
+    animation-delay:1.5s;
+    border-radius: 50%;
+}
+.Box li:nth-child(10){
+    left:75%;
+    width:210px;
+    height:210px;
+    animation-delay:1.5s;
+    border-radius: 50%;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg) ;
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-2000px) rotate(360deg) ;
+        opacity: 0;
+    }
+}
+    p{
+      font-size: 2rem;
+    }
+      h1 {color:black;
+      font-weight: 400;}
+  body {background-color: #7f7f7f;
+  position: relative;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.page-con{
+  position: relative;
+  background-color: #c1c7c9;
+  margin: 10rem;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  bottom: 5rem;
+  right: auto;
+  margin-bottom: 0rem;
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+.page-con .title-con .title-about-con {
+padding:20px;
+position: relative;
+right: 20rem;
+}
+.page-con .title-con .logo-con{
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 20rem;
+  bottom: 5rem;
+  
+}
+.page-con .title-con .logo-con img{
+  position: absolute;
+  border-radius: 50%; 
+  height: 150px;
+  width: 150px;
+  transition: var(--transition);
+}
+.page-con .title-con .logo-con img:hover{
+  
+  transition: var(--transition);
+  transform: translateY(-5px);
+}
+
+img{
+  border-radius: 15px;
+  object-fit: cover;
+  transition: all .4s ease-in-out;
+  filter: grayscale(100%);                        
+}
+img:hover{
+  filter: grayscale(0); 
+  transition: var(--transition);
+}
+
+
+
+.grid-con{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1px;
+  padding: 0, 10rem;
+}
+
+.grid-con .personal-con .personal-grid{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+position: relative;
+
+}
+.personal-con{
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.interest-con{
+  position: relative;
+  background-color: var(---con-background-color);
+  border-radius: 15px;
+  margin: 1rem;  
+  transition: var(--transition);
+}
+
+.interest-con:hover{
+  background-color: black;
+  transition: var(--transition);
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+  color: var(--color-white);
+}
+
+.interest-con span{
+font-weight: 600;
+font-style: italic;
+}
+
+.interest-con .interest-li{
+  padding: 20px;
+}
+
+
+
+.skills-con{
+  background-color: var(---con-background-color);
+  border-radius: 15px;
+  margin: 1rem;   
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.skills-con::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+  border-radius: 50%;
+}
+.skills-con:hover::before,
+.skills-con:focus::before{
+  transform: scaleX(1);
+  transition: var(--transition);
+}
+
+.skills-con:hover,
+.skills-con:focus{
+  list-style: none;
+  color: var(--color-white);
+  transition: var(--transition);
+  transform: translateY(-5px);
+}
+
+.skills-con .skills-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+  margin-left: 20px;
+  transition: var(--transition);
+  
+}
+
+.educ-con{
+  background-color: var(---con-background-color);
+  border-radius: 15px;
+  margin: 1rem;
+  transition: var(--transition);
+}
+
+.educ-con:hover{
+  background-color: black;
+  transition: var(--transition);
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+  color: var(--color-white);
+}
+.hobbies-con{
+  background-color: var(---con-background-color);
+  border-radius: 15px;
+  margin: 1rem; 
+  transition: var(--transition);
+}
+
+.hobbies-con p{
+  font-size: medium;
+  padding-bottom: 10px;
+  transition: var(--transition);
+}
+
+.hobbies-con::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: var(--transition);
+  border-radius: 50%;
+}
+.hobbies-con:hover::before,
+.hobbies-con:focus::before{
+  transform: scaleX(1);
+  transition: var(--transition);
+}
+
+.hobbies-con:hover,
+.hobbies-con:focus{
+  
+  color: var(--color-white);
+  transition: var(--transition);
+  transform: translateY(-5px);
+}
+
+
+
+
+.links-con{
+  background-color: var(---con-background-color);
+  border-radius: 15px;
+  margin: 1rem;
+  
+}
+
+.personal-item{
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.personal-item:hover{
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+}
+
+.links-con .link-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.links-con .link-grid .link-icon a{
+   align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-icon);
+  cursor: pointer;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 1.4rem;
+  transition: var(--transition);
+}
+
+a:hover{
+  background-color: var(--color-secondary);
+  transition: var(--transition);
+}
+
+ion-icon{
+  align-items: center;
+  justify-content: center;
+   font-size: 4.3rem;
+   transition: var(--transition);
+  
+}
+ion-icon:hover{
+  color: var(--color-primary);
+  transition: var(--transition);
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <ul class="Box"> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+   </ul>       
+  <div class="page-con">
+    <div class="title-con">
+      <div class="title-about-con">
+      <div class="title">
+  <h1>Justin Santos</h1>
+</div>
+
+  <div class="about-con">
+  <p>About</p>
+</div>
+<div class="logo-con">
+  <img src="img/JS.png" alt="Justin Logo" >
+</div>
+</div>
+
+  <div class="img-con">
+  <img src="img/portimage.jpg" alt="Justin Santos pic">
+</div>
+</div>
+
+
+
+
+<div class="grid-con">
+  <div class="personal-con">
+  <h1>Personal Information</h1>
+  <div class="personal-grid">
+
+    <div class="personal-item">
+  <div class="birthday-con">
+  <p>Birthday:</p>
+  August 29, 2001
+</div>
+</div>
+
+<div class="personal-item">
+<div class="address-con">
+<p>Address:</p>
+  Villia Cecillia, Pototan, Iloilo
+</div>
+</div>
+<div class="personal-item">
+<div class="num-con">
+  <p>Mobile Number:</p>
+  +639 272 357 178<br /> 
+</div>
+</div>
+<div class="personal-item">
+<div class="email-con">
+  <p>Email <br> Address:</p>
+  justin.santos-18@cpu.edu.ph </p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="interest-con">
+  <h1>Interest</h1>
+  <div class="interest-li">
+    <li><span>Learning:</span> Love learning as it exercises my brain and it helps me feel Healthy </li>
+    <br>
+    <li><span>Reading:</span> I really Love reading as it is another  means of exercising my brain. For me personally 
+      reading Books is like day dreaming where each chapters limit is the readers comprehension and the ability to visualize things. Books such 
+    as the hobbit and lord of the ring (whtvr aslong as it involves middle earth) intruiges me</li>
+    <br>
+    <li><span>Playing:</span> I Lovee Playing games  during my spare time, as of now i really would LOVE to try DND (Dungeons and Dragons) with friends as 
+      the game is very-very appealing and fun
+    </li>
+  </div>
+  </div>
+
+  <div class="skills-con">
+  <h1>Skills</h1>
+<div class="skills-grid"> 
+
+<div class="skill-list">
+    <li>C# MVC Framework</li>
+  </div>
+    <div class="skill-list">
+    <li>Python Django</li>
+    </div>
+    <div class="skill-list">
+    <li>Front-End Html CSS JS</li>
+    </div>
+    <div class="skill-list">
+    <li>C# ADO.NET</li>
+    </div>
+    <div class="skill-list">
+      <li>Web- Scraping Python</li>
+      </div>
+      <div class="skill-list">
+        <li>Cooking</li>
+        </div>
+  </div>
+  </div>
+
+
+  <div class="educ-con">
+  <h1>Educational History</h1>
+  <div class="educ-lists">
+  <li>Elementary : Pototan Pilot Elementary School</li>
+    <li>Highschool : Colegio De La Inmaculada Conception</li>
+    <li>Senior Highschool : Central Philippine University</li>
+    <li>College : Central Philippine University</li>
+  </div>
+  </div>
+
+
+  <div class="hobbies-con">
+  <h1>More about ME</h1>
+ <div class="hobbies-p">
+  <p>In my spare time i try and read documentations of random projects that piques my interest on GITHUB, i Also
+  browse reddit answer Leetcode Problems and play CSS battle </p>
+ </div>
+</div>
+
+
+
+<div class="links-con">
+  <h1>Social Media Links</h1>
+  <div class="link-grid">
+  <div class="link-icon" target= "_blank">
+  <a href="https://www.facebook.com/SarcasmIzLit/"><ion-icon  class="icon" name="logo-facebook"></ion-icon></a>
+</div>
+<div class="link-icon" target= "_blank">
+  <a href="https://www.instagram.com/jaexgyeong_/"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+</div>
+<div class="link-icon" target= "_blank">
+  <a href="https://github.com/Ozzie-code-alt"><ion-icon class="icon" name="logo-github"></on-icon></a>
+</div>
+</div>
+</div>
+</div>
+  </div>
+ 
+</body>
+</html>
