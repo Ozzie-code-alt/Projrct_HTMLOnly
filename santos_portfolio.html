@@ -8,6 +8,66 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
   <style>
+
+@media screen and (max-width: 1250px){
+  img{
+    
+    width: 700px;
+  }
+}
+
+
+@media screen and (max-width: 1200px){ /*  MEdia Queriess !!!!*/
+  img{
+    height: 400px;
+    width: 700px;
+  }
+
+.page-con .title-con .title-a-legit {
+  display: flex;
+  flex-direction: column;
+padding:20px;
+position: relative;
+left: 5rem;
+}
+
+}/*ENd*/
+
+@media screen and (max-width: 1050px){
+  img{
+    height: 200px;
+    width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 980px){
+
+  img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .grid-con{
+  grid-template-columns: 1fr;
+
+}
+.grid-con .personal-con .personal-grid{
+
+grid-template-columns:1fr;
+
+}
+.skills-con .skills-grid{
+  grid-template-columns: 1fr;
+  
+
+  
+}
+
+}
+
+
+
     :root{
       ---con-background-color : #9c9c9c;
       --transition: all .4s ease-in-out; 
@@ -206,12 +266,20 @@ img:hover{
 display: grid;
 grid-template-columns: repeat(2,1fr);
 position: relative;
-
 }
+
 .personal-con{
   border-radius: 15px;
   margin: 1rem;
 }
+
+.personal-con .main-title h2{
+  position: relative;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+}
+
 
 .interest-con{
   position: relative;
@@ -238,7 +306,6 @@ font-style: italic;
 .interest-con .interest-li{
   padding: 20px;
 }
-
 
 
 .skills-con{
@@ -427,12 +494,14 @@ ion-icon:hover{
   <div class="page-con">
     <div class="title-con">
       <div class="title-about-con">
+        <div class="title-a-legit">
       <div class="title">
   <h1>Justin Santos</h1>
 </div>
 
   <div class="about-con">
   <p>About</p>
+</div>
 </div>
 <div class="logo-con">
   <img src="img/JS.png" alt="Justin Logo" >
@@ -449,7 +518,9 @@ ion-icon:hover{
 
 <div class="grid-con">
   <div class="personal-con">
-  <h1>Personal Information</h1>
+    <div class="main-title">
+  <h2>Personal Information</h2>
+    </div>
   <div class="personal-grid">
 
     <div class="personal-item">
@@ -483,7 +554,9 @@ ion-icon:hover{
 
 
 <div class="interest-con">
+  <div class="main-title">
   <h1>Interest</h1>
+</div>
   <div class="interest-li">
     <li><span>Learning:</span> Love learning as it exercises my brain and it helps me feel Healthy </li>
     <br>
@@ -498,7 +571,9 @@ ion-icon:hover{
   </div>
 
   <div class="skills-con">
+    <div class="main-title">
   <h1>Skills</h1>
+    </div>
 <div class="skills-grid"> 
 
 <div class="skill-list">
@@ -524,7 +599,9 @@ ion-icon:hover{
 
 
   <div class="educ-con">
+    <div class="main-title">
   <h1>Educational History</h1>
+    </div>
   <div class="educ-lists">
   <li>Elementary : Pototan Pilot Elementary School</li>
     <li>Highschool : Colegio De La Inmaculada Conception</li>
@@ -535,7 +612,9 @@ ion-icon:hover{
 
 
   <div class="hobbies-con">
+    <div class="main-title">
   <h1>More about ME</h1>
+    </div>
  <div class="hobbies-p">
   <p>In my spare time i try and read documentations of random projects that piques my interest on GITHUB, i Also
   browse reddit answer Leetcode Problems and play CSS battle </p>
@@ -545,7 +624,9 @@ ion-icon:hover{
 
 
 <div class="links-con">
+  <div class="main-title">
   <h1>Social Media Links</h1>
+  </div>
   <div class="link-grid">
   <div class="link-icon" target= "_blank">
   <a href="https://www.facebook.com/SarcasmIzLit/"><ion-icon  class="icon" name="logo-facebook"></ion-icon></a>
